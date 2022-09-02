@@ -1,0 +1,86 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.container > img {
+  position: absolute;
+  margin-left: -90px;
+}
+
+.duvidas {
+  background-color: #fcfcfc;
+  width: 65.5rem;
+  min-height: 34.7rem;
+  padding-top: 50px;
+  padding-left: 220px;
+  padding-right: 50px;
+
+  border-radius: 21px;
+  box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
+}
+
+.duvidas .perguntas .item {
+  cursor: pointer;
+  background: url(../image/seta.svg) no-repeat;
+  background-position: top 5px right 0;
+  border-bottom: 1px solid #d4d4d4;
+  margin: 15px 0px;
+}
+
+.duvidas .perguntas .item:last-child {
+  border-bottom: none;
+}
+
+.resposta {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 17.58px;
+  padding: 10px 0;
+}
+
+.duvidas .titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 29.3px;
+  margin-bottom: 14px;
+}
+
+.duvidas .pergtuntas .texto {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 19.92px;
+  width: 90%;
+  transition: 0.2 ease;
+  padding: 15px 0px;
+}
+
+.duvidas .perguntas .texto:hover {
+  color: #ec660d;
+}
+
+.item.ativo .texto {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.item.ativo .resposta {
+  display: block;
+}
+
+.duvidas .perguntas .item.ativo {
+  background: url(../image/setaberta.svg) no-repeat;
+  background-position: top 5px right 0;
+}
